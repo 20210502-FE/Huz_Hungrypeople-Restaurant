@@ -1,0 +1,28 @@
+.about {
+
+  &__content {
+    margin-top: 217px;
+    margin-bottom: 217px;
+  }
+
+  &__desc {
+    font-family: $font-regular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  &__image {
+    position: absolute;
+    right:124px;
+    top: 100px;
+  }
+
+  &__yellow-border {
+    position: absolute;
+    right: 0;
+    top: 213px;
+  }
+}

@@ -1,0 +1,47 @@
+.top-banner {
+  background-image: url("../../assets/images/banner-bg .png");
+  padding-top: 151px;
+  margin-top: -180px;
+  z-index: -1;
+
+  &__wrapper {
+    margin-top: 165px;
+  }
+
+  &__content {
+    max-width: 998px;
+  }
+
+  &__button {
+    margin-bottom: 92px;
+    padding: 0 279px 0 279px;
+  }
+
+  &__angle-down {
+    text-align: center;
+    margin-bottom: 92px;
+  }
+
+  &__angle-down-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__schedule {
+    position: absolute;
+    margin-top: 101px;
+    left: -81px;
+    transform: rotate(270deg);
+    color: $color-white;
+  }
+
+  &__socials {
+    position: absolute;
+    right: 50px;
+    transform: rotate(90deg);
+  }
+
+  &__socials img {
+    transform: rotate(270deg)
+  }
+}

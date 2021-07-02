@@ -1,0 +1,36 @@
+.booking {
+  &__content {
+    margin-top: 162px;
+    margin-bottom: 162px;
+  }
+  &__image {
+    position: absolute;
+    right:124px;
+    top: 70px;
+  }
+
+  &__yellow-border {
+    position: absolute;
+    right: 0;
+    top: 150px;
+  }
+
+  &__schedule {
+    position: absolute;
+    margin-top: 640px;
+    left: 580px;
+    color: $color-black;
+    opacity: 0.4;
+  }
+
+  &__form-item {
+    margin: 5px;
+    width: 280px;
+  }
+
+  &__button {
+    width: 568px;
+    margin: 5px;
+  }
+
+}

@@ -1,0 +1,83 @@
+.events {
+
+  &__subtitle {
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  &__banner-bg-img {
+    background-image: url("../../assets/images/private_ivents-bg.png");
+  }
+
+  &__image {
+    position: absolute;
+  }
+
+  &__image-left {
+    top: 100px;
+    left: 125px;
+  }
+
+  &__image-right {
+    top: 100px;
+    right: 125px;
+  }
+
+  &__yellow-border-left {
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    left: 0;
+  }
+
+  &__yellow-border-right {
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    right: 0;
+  }
+
+  &__text {
+    position: absolute;
+    font-family:$d-font-bold;
+    font-size: 24px;
+    line-height: 12px;
+    text-align: left;
+  }
+
+  &__text-left {
+    left:450px;
+    top: 349px;
+  }
+
+  &__text-desc-left {
+    padding: 30px 20px;
+    background-color: $color-black;
+    width: 479px;
+    height: 80px;
+    transform: rotate(90deg);
+  }
+
+  &__text-right {
+    right:450px;
+    top: 349px;
+  }
+
+  &__text-desc-right {
+    padding: 30px 20px;
+    background-color: $color-black;
+    width: 479px;
+    height: 80px;
+    transform: rotate(270deg);
+  }
+
+  &__private {
+    opacity: 0.5;
+    font-family:$font-regular;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    margin-top: 500px;
+    padding: 50px 0;
+  }
+}

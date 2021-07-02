@@ -1,0 +1,36 @@
+.menu {
+
+  &__title {
+    margin-top: 100px;
+  }
+  &__nav {
+    font-family: $font-regular;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__nav-list {
+    margin: 50px;
+  }
+
+  &__nav-list-item {
+    padding: 20px 40px;
+  }
+
+  &__nav-list-item a {
+    color: $color-black;
+  }
+
+  &__food {
+    margin-bottom: 100px;
+  }
+
+  &__food-list-item {
+    font-family:$d-font-bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}

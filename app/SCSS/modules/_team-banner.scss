@@ -1,0 +1,43 @@
+.team {
+
+  &__subtitle {
+    align-items: center;
+  }
+
+  &__banner-bg-img {
+    background-image: url("../../assets/images/our_team-bg.png");
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 50px;
+    left: 650px;
+  }
+
+  &__content {
+    margin-top: 217px;
+    margin-bottom: 217px;
+  }
+
+  &__desc {
+    font-family: $font-regular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  &__image {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    bottom: 100px;
+  }
+
+  &__yellow-border {
+    position: absolute;
+    left:0;
+    top: 213px;
+  }
+}

@@ -1,0 +1,27 @@
+.contact {
+
+  &__title {
+    margin-top: 100px;
+  }
+
+  &__text {
+    margin-bottom: 51px;
+  }
+
+  &__form {
+    margin-bottom: 100px;
+  }
+
+  &__form-item {
+    margin: 6px;
+    width: 420px;
+  }
+
+  &__form-info {
+    padding: 10px;
+  }
+
+  &__form-button {
+    padding: 10px;
+  }
+}
