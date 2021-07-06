@@ -50,6 +50,11 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 input {
   padding: 10px;
   border: none;
@@ -296,10 +301,12 @@ textarea {
 .top-banner__socials {
   position: absolute;
   right: 50px;
+  top: 350px;
   transform: rotate(90deg);
 }
 
 .top-banner__socials img {
+  width: 60px;
   transform: rotate(270deg);
 }
 
@@ -346,13 +353,13 @@ textarea {
 .team__content {
   margin-top: 217px;
   margin-bottom: 217px;
+  line-height: 24px;
 }
 
 .team__desc {
   font-family: "Open Sans Regular";
   font-size: 14px;
   font-style: normal;
-  line-height: 24px;
   text-align: center;
   padding-bottom: 100px;
 }
@@ -445,17 +452,6 @@ textarea {
   position: absolute;
   left: 0;
   top: 213px;
-}
-
-.specialties__circle {
-  position: absolute;
-}
-
-.specialties__circle__item {
-  background-color: green;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
 }
 
 .menu__title {
@@ -598,6 +594,11 @@ textarea {
 
 .contact__form-info {
   padding: 10px;
+}
+
+.contact__form-info i {
+  padding: 10px;
+  color: #E8C300;
 }
 
 .contact__form-button {

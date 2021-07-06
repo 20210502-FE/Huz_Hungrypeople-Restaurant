@@ -17,13 +17,13 @@
   &__content {
     margin-top: 217px;
     margin-bottom: 217px;
+    line-height: 24px;
   }
 
   &__desc {
     font-family: $font-regular;
     font-size: 14px;
     font-style: normal;
-    line-height: 24px;
     text-align: center;
     padding-bottom: 100px;
   }
@@ -37,7 +37,7 @@
 
   &__yellow-border {
     position: absolute;
-    left:0;
+    left: 0;
     top: 213px;
   }
 }

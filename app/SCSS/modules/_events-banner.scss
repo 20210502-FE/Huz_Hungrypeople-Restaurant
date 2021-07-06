@@ -39,14 +39,14 @@
 
   &__text {
     position: absolute;
-    font-family:$d-font-bold;
+    font-family: $d-font-bold;
     font-size: 24px;
     line-height: 12px;
     text-align: left;
   }
 
   &__text-left {
-    left:450px;
+    left: 450px;
     top: 349px;
   }
 
@@ -59,7 +59,7 @@
   }
 
   &__text-right {
-    right:450px;
+    right: 450px;
     top: 349px;
   }
 
@@ -73,7 +73,7 @@
 
   &__private {
     opacity: 0.5;
-    font-family:$font-regular;
+    font-family: $font-regular;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
