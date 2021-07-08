@@ -1,0 +1,60 @@
+.flex {
+  display: flex;
+}
+
+.flex_align-center {
+  align-items: center;
+}
+
+.flex_align-start {
+  align-items: flex-start;
+}
+
+.flex_content-end {
+  justify-content: flex-end;
+}
+
+.flex_content-center {
+  justify-content: center;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex_column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex_space-between {
+  justify-content: space-between;
+}
+
+.flex_basis-80 {
+  flex-basis: 80%;
+  max-width: 80%;
+}
+
+.flex_basis-50 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.flex_basis-25 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.flex_basis-30 {
+  flex-basis: 30%;
+  max-width: 30%;
+}
+
+.flex_basis-100 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
