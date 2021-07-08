@@ -1,9 +1,5 @@
 .about {
-
-  &__content {
-    margin-top: 217px;
-    margin-bottom: 217px;
-  }
+  padding: 100px 0;
 
   &__desc {
     font-family: $font-regular;
@@ -15,14 +11,20 @@
   }
 
   &__image {
-    position: absolute;
-    right: 124px;
-    top: 100px;
+    position: relative;
+    max-width: 475px;
+    width: 100%;
   }
 
-  &__yellow-border {
+  &__image::after {
+    content: '';
     position: absolute;
-    right: 0;
-    top: 213px;
+    top: 0;
+    bottom: 0;
+    right: -70px;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    border: 20px solid $color-yellow;
   }
 }

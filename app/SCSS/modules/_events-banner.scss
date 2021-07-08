@@ -1,83 +1,80 @@
 .events {
-
-  &__subtitle {
-    align-items: center;
-    padding: 50px 0;
-  }
+  padding: 100px 0;
 
   &__banner-bg-img {
-    background-image: url("../../assets/images/private_ivents-bg.png");
+    background-image: url("../assets/images/private_ivents-bg.png");
   }
 
-  &__image {
-    position: absolute;
+  &__image-left, &__image-right {
+    position: relative;
+    max-width: 475px;
+    width: 100%;
   }
 
-  &__image-left {
-    top: 100px;
-    left: 125px;
-  }
-
-  &__image-right {
-    top: 100px;
-    right: 125px;
-  }
-
-  &__yellow-border-left {
-    position: absolute;
-    z-index: 1;
-    top: 170px;
-    left: 0;
-  }
-
-  &__yellow-border-right {
-    position: absolute;
-    z-index: 1;
-    top: 170px;
-    right: 0;
-  }
-
-  &__text {
-    position: absolute;
+  &__image-right::before {
+    content: 'CORPORATE PZRTIES';
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
     font-family: $d-font-bold;
     font-size: 24px;
     line-height: 12px;
-    text-align: left;
+    padding: 20px 0 0 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -28px;
+    margin: auto;
+    width: 10%;
+    height: 78%;
+    background: $color-black
   }
 
-  &__text-left {
-    left: 450px;
-    top: 349px;
+  &__image-right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -70px;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    border: 20px solid $color-yellow;
   }
 
-  &__text-desc-left {
-    padding: 30px 20px;
-    background-color: $color-black;
-    width: 479px;
-    height: 80px;
-    transform: rotate(90deg);
+
+  &__image-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -70px;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    border: 20px solid $color-yellow;
   }
 
-  &__text-right {
-    right: 450px;
-    top: 349px;
-  }
-
-  &__text-desc-right {
-    padding: 30px 20px;
-    background-color: $color-black;
-    width: 479px;
-    height: 80px;
-    transform: rotate(270deg);
+  &__image-left::after {
+    content: 'WEDDINGS';
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    font-family: $d-font-bold;
+    font-size: 24px;
+    line-height: 12px;
+    padding: 20px 0 0 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -28px;
+    margin: auto;
+    width: 10%;
+    height: 78%;
+    background: $color-black
   }
 
   &__private {
-    opacity: 0.5;
-    font-family: $font-regular;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    margin-top: 500px;
-    padding: 50px 0;
+    margin: auto;
+    opacity: 0.4;
   }
 }

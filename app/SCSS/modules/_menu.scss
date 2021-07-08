@@ -1,8 +1,5 @@
 .menu {
-
-  &__title {
-    margin-top: 100px;
-  }
+  padding: 100px 0;
 
   &__nav {
     font-family: $font-regular;
@@ -15,23 +12,28 @@
     margin: 50px;
   }
 
-  &__nav-list-item {
+  &__nav-item {
     padding: 20px 40px;
   }
 
-  &__nav-list-item a {
+  &__nav-item_right-line {
+    border-right: 2px solid $color-grey;
+  }
+
+  &__nav-item_right-line:nth-child(6n+7) {
+    border-right: none;
+  }
+
+  &__nav-item a {
     color: $color-black;
   }
 
-  &__food {
-    margin-bottom: 100px;
-  }
-
-  &__food-list-item {
+  &__food-item {
     font-family: $d-font-bold;
     font-size: 18px;
     line-height: 18px;
     text-align: left;
     margin-bottom: 20px;
+    min-width: 416px;
   }
 }

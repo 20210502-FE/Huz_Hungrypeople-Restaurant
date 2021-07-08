@@ -12,7 +12,7 @@
 <body>
 <header class="header relative banner-bg-img header__bg-img">
     <div class="wrapper flex flex_align-center flex_space-between">
-        <nav class="header__nav header__nav-left">
+        <nav class="header__nav header__nav_left">
             <ul class="header__nav-list flex">
                 <li class="header__nav-item"><a href="#">HOME</a></li>
                 <li class="header__nav-item"><a href="#">ABOUT</a></li>
@@ -23,7 +23,7 @@
         <div class="header__logo">
             <img src="assets/images/header_center.png" alt="banner-center">
         </div>
-        <nav class="header__nav header__nav-right">
+        <nav class="header__nav header__nav_right">
             <ul class="header__nav-list flex">
                 <li class="header__nav-item"><a href="#">MENU</a></li>
                 <li class="header__nav-item"><a href="#">GALERIE</a></li>
@@ -34,7 +34,7 @@
     </div>
 </header>
 <main>
-    <section class="top-banner relative banner-bg-img top__banner-bg-img">
+    <section class="top-banner relative banner-bg-img top-banner__banner-bg-img">
         <div class="wrapper top-banner__wrapper flex flex_content-center">
             <div class="top-banner__content flex flex_column flex_basis-80">
                 <h6 class="subtitle top-banner__subtitle"> RESTAURANT</h6>
@@ -51,7 +51,7 @@
             <div class="schedule top-banner__schedule">
                 <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
             </div>
-            <div class=" socials top-banner__socials">
+            <div class="socials top-banner__socials">
                 <a href="#"><img src="assets/icons/facebook-icon.png" alt="facebook"
                                  class="top-banner__socials-icon"></a>
                 <a href="#"><img src="assets/icons/twitter-icon.png" alt="twitter" class="social__icon"></a>
@@ -60,7 +60,7 @@
         </div>
     </section>
     <section class="about relative">
-        <div class="wrapper flex">
+        <div class="wrapper flex flex_space-between flex_align-center">
             <div class="about__content flex flex_column flex_basis-50">
                 <h2 class="section-title about__title">ABOUT US</h2>
                 <div class="line"></div>
@@ -77,18 +77,18 @@
                     </p>
                 </div>
             </div>
-            <div class="about__image">
+            <div class="about__image flex">
                 <img src="assets/images/about_us-img.png" alt="about us">
-            </div>
-            <div class="about__yellow-border">
-                <img src="assets/images/yellow-border.png" alt="yellow border">
             </div>
         </div>
     </section>
     <section class="team relative banner-bg-img team__banner-bg-img">
-        <div class="wrapper flex flex_content-end">
+        <div class="wrapper flex flex_space-between">
             <h6 class="subtitle team__subtitle">OUR TEAM</h6>
-            <div class="team__content flex flex_column flex_basis-50">
+            <div class="team__image flex">
+                <img src="assets/images/our_team-img.png" alt="our team">
+            </div>
+            <div class="team__content flex flex_column flex_basis-50 flex_content-center">
                 <h2 class="section-title team__title">MASTER CHEF</h2>
                 <div class="line"></div>
                 <div class="team__desc">
@@ -104,102 +104,99 @@
                     </p>
                 </div>
             </div>
-            <div class="team__image">
-                <img src="assets/images/our_team-img.png" alt="our team">
-            </div>
-            <div class="team__yellow-border">
-                <img src="assets/images/yellow-border.png" alt="yellow border">
-            </div>
         </div>
     </section>
     <section class="booking relative">
-        <div class="wrapper flex">
-            <div class="booking__content flex flex_column flex_basis-50">
-                <h2 class="section-title booking__title">BOOK A TABLE</h2>
-                <div class="line"></div>
-                <div class=" form booking__form">
-                    <form action="#" method="post">
-                        <div class="flex flex_wrap flex_content-center">
-                            <div class="flex">
-                                <div class="flex">
-                                    <div class="form-item booking__form-item">
-                                        <label>
-                                            <input type="text" placeholder="Name"/>
-                                        </label>
+        <div class="wrapper">
+            <div class="flex flex_column">
+                <div class="booking__content flex flex_align-center flex_space-between">
+                    <div class="flex flex_basis-50 flex_column">
+                        <h2 class="section-title booking__title">BOOK A TABLE</h2>
+                        <div class="line"></div>
+                        <div class=" form booking__form">
+                            <form action="#" method="post">
+                                <div class="flex flex_wrap flex_content-center">
+                                    <div class="flex">
+                                        <div class="form-item booking__form-item">
+                                            <label>
+                                                <input type="text" placeholder="Name"/>
+                                            </label>
+                                        </div>
+                                        <div class="form-item booking__form-item">
+                                            <label>
+                                                <input type="email" placeholder="Email"/>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="form-item booking__form-item">
-                                        <label>
-                                            <input type="email" placeholder="Email"/>
-                                        </label>
+                                    <div class="flex">
+                                        <div class="flex">
+                                            <div class="form-item booking__form-item">
+                                                <label>
+                                                    <input type="number" placeholder="Phone"/>
+                                                </label>
+                                            </div>
+                                            <div class="form-item booking__form-item">
+                                                <label>
+                                                    <select>
+                                                        <option>People</option>
+                                                        <option>меньше 5</option>
+                                                        <option>5-10</option>
+                                                        <option>10-15</option>
+                                                        <option>15-20</option>
+                                                        <option>20-25</option>
+                                                        <option>25-30</option>
+                                                        <option>больше 30</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="flex">
+                                            <div class="form-item booking__form-item">
+                                                <label>
+                                                    <input type="date" name="Date">
+                                                </label>
+                                            </div>
+                                            <div class="form-item booking__form-item">
+                                                <label>
+                                                    <select>
+                                                        <option>Time</option>
+                                                        <option>8:00-12:00</option>
+                                                        <option>12:00-16:00</option>
+                                                        <option>16:00-20:00</option>
+                                                        <option>20:00-00:00</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex">
-                                <div class="flex">
-                                    <div class="form-item booking__form-item">
-                                        <label>
-                                            <input type="number" placeholder="Phone"/>
-                                        </label>
-                                    </div>
-                                    <div class="form-item booking__form-item">
-                                        <label>
-                                            <select>
-                                                <option>People</option>
-                                                <option>меньше 5</option>
-                                                <option>5-10</option>
-                                                <option>10-15</option>
-                                                <option>15-20</option>
-                                                <option>20-25</option>
-                                                <option>25-30</option>
-                                                <option>больше 30</option>
-                                            </select>
-                                        </label>
-                                    </div>
+                                <div class="flex flex_content-center">
+                                    <button type="submit"
+                                            class="button button_yellow booking__button flex_content-center">
+                                        BOOK NOW
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="flex">
-                                <div class="flex">
-                                    <div class="form-item booking__form-item">
-                                        <label>
-                                            <input type="date" name="Date">
-                                        </label>
-                                    </div>
-                                    <div class="form-item booking__form-item">
-                                        <label>
-                                            <select>
-                                                <option>Time</option>
-                                                <option>8:00-12:00</option>
-                                                <option>12:00-16:00</option>
-                                                <option>16:00-20:00</option>
-                                                <option>20:00-00:00</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                        <div class="flex flex_content-center">
-                            <button type="submit" class="button button_yellow booking__button flex_content-center">
-                                BOOK NOW
-                            </button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="booking__image flex">
+                        <img src="assets/images/booking-img.png" alt="booking">
+                    </div>
                 </div>
-            </div>
-            <div class="booking__image">
-                <img src="assets/images/booking-img.png" alt="booking">
-            </div>
-            <div class="booking__yellow-border">
-                <img src="assets/images/yellow-border.png" alt="yellow border">
-            </div>
-            <div class="schedule booking__schedule">
-                Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782
+                <div class="schedule booking__schedule flex">
+                    Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782
+                </div>
             </div>
         </div>
     </section>
     <section class="specialties relative banner-bg-img specialties__banner-bg-img">
-        <div class="wrapper flex flex_content-end">
+        <div class="wrapper flex flex_space-between flex_align-center">
             <h6 class="subtitle specialties__subtitle">SPECIALTIES</h6>
+            <div class="specialties__image flex">
+                <img src="assets/images/specialties-img.png" alt="specialties">
+            </div>
             <div class="specialties__content flex flex_column flex_basis-50">
                 <h2 class="section-title specialties__title">MASTER CHEF</h2>
                 <div class="line"></div>
@@ -216,12 +213,6 @@
                     </p>
                 </div>
             </div>
-            <div class="specialties__image">
-                <img src="assets/images/specialties-img.png" alt="specialties">
-            </div>
-            <div class="specialties__yellow-border">
-                <img src="assets/images/yellow-border.png" alt="yellow border">
-            </div>
         </div>
     </section>
     <section class="menu relative">
@@ -236,82 +227,78 @@
             </div>
             <nav class="menu__nav">
                 <ul class="menu__nav-list flex">
-                    <li class="menu__nav-list-item right-line"><a href="#">SOUPE</a></li>
-                    <li class="menu__nav-list-item right-line"><a href="#">PIZZA</a></li>
-                    <li class="menu__nav-list-item right-line"><a href="#">PASTA</a></li>
-                    <li class="menu__nav-list-item right-line"><a href="#">DESERT</a></li>
-                    <li class="menu__nav-list-item right-line"><a href="#">WINE</a></li>
-                    <li class="menu__nav-list-item right-line"><a href="#">BEER</a></li>
-                    <li class="menu__nav-list-item right-line"><a href="#">DRINKS</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">SOUPE</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">PIZZA</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">PASTA</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">DESERT</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">WINE</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">BEER</a></li>
+                    <li class="menu__nav-item menu__nav-item_right-line"><a href="#">DRINKS</a></li>
                 </ul>
             </nav>
-            <div class="menu__food flex flex_space-between">
-                <ul class="menu__food-list flex flex_wrap flex_basis-30">
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+            <div class="menu__food">
+                <ul class="menu__food-list flex flex_wrap flex_content-center">
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                </ul>
-                <ul class="menu__food-list flex flex_wrap flex_basis-30">
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                </ul>
-                <ul class="menu__food-list flex flex_wrap flex_basis-30">
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
-                    <li class="menu__food-list-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
+                    <li class="menu__food-item">PIZZA QUATRO STAGIONI . . . . 55,68 USD
                         <br><span class="small">Integer ullamcorper neque eu purus euismod</span>
                     </li>
                 </ul>
@@ -321,27 +308,15 @@
     <section class="events relative banner-bg-img events__banner-bg-img">
         <div class="wrapper ">
             <h6 class="subtitle events__subtitle">PRIVATE EVENTS</h6>
-            <div class="flex">
-                <div class="events__text events__text-left">
-                    <div class="flex events__text-desc-left">WEDDINGS</div>
-                </div>
-                <div class="yellow-border events__yellow-border-left">
-                    <img src="assets/images/yellow-border.png" alt="yellow-border">
-                </div>
+            <div class="images events__images flex flex_space-between">
                 <div class="events__image events__image-left">
                     <img src="assets/images/weddings-img.png" alt="weddings">
-                </div>
-                <div class="events__text events__text-right">
-                    <div class="flex events__text-desc-right">CORPORATE PZRTIES</div>
-                </div>
-                <div class="yellow-border events__yellow-border-right ">
-                    <img src="assets/images/yellow-border.png" alt="yellow-border">
                 </div>
                 <div class="events__image events__image-right">
                     <img src="assets/images/corporate_pzrties-img.png" alt="corporate">
                 </div>
             </div>
-            <div class="events__private">
+            <div class="private events__private flex flex_content-center">
                 For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.
             </div>
         </div>
@@ -358,11 +333,9 @@
         <div class="wrapper flex flex_column flex_align-center">
             <h2 class="section-title contact__title">CONTACT</h2>
             <div class="line"></div>
-            <div class="flex flex_basis-50 flex_content-center">
-                <p class="text contact__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
-                    maximus, molestie est a, tempor magna.
-                </p>
+            <div class=" text contact__text flex flex_basis-50 flex_content-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+                maximus, molestie est a, tempor magna.
             </div>
             <div class="form contact__form">
                 <form action="#" method="post">
@@ -385,13 +358,13 @@
                             </div>
                         </div>
                         <div class="form-item contact__form-item flex_basis-100">
-                            <textarea rows="5" cols="30" name="text" placeholder="Message"></textarea>
+                            <label><textarea rows="5" cols="30" name="text" placeholder="Message"></textarea></label>
                         </div>
                         <div class="flex flex_wrap contact__form-item flex_basis-100">
                             <div class="contact__form-info flex flex_basis-50 flex_align-center small">
-                                <i class="fas fa-map-marker-alt "></i> 5th London Boulevard, <i
-                                    class="fas fa-phone"></i> U.K. +40 729 131 637/+40 726 458 782, <i
-                                    class="fas fa-envelope"></i> office@mindblister.com
+                                <i class="fas fa-map-marker-alt "></i> 5th London Boulevard,
+                                <i class="fas fa-phone"></i><a href="tel:">U.K. +40 729 131 637/+40 726 458 782,</a>
+                                <i class="fas fa-envelope"></i><a href="mailto:"> office@mindblister.com </a>
                             </div>
                             <button type="submit" class="button button_yellow contact__form-button flex_basis-50">SEND
                                 MESSAGE
@@ -405,9 +378,7 @@
 </main>
 <footer class="footer">
     <div class="wrapper flex flex_content-center">
-        <div class="footer__content">
-            © Copyright Mindblister 2019
-        </div>
+        © Copyright Mindblister 2019
     </div>
 </footer>
 </body>

@@ -8,7 +8,7 @@ body {
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
-  font-family: $font-regular,sans-serif;
+  font-family: $font-regular, sans-serif;
 }
 
 a {
@@ -48,7 +48,6 @@ select {
 }
 
 textarea {
-  padding: 10px;
   border: none;
   display: inline-block;
   width: 1280px;
@@ -82,7 +81,7 @@ textarea {
 }
 
 .section-title {
-  font-family:$d-font-bold;
+  font-family: $d-font-bold;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
@@ -95,6 +94,11 @@ textarea {
   text-align: center;
   color: $color-white;
   letter-spacing: 0.5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: auto;
 }
 
 .line {
@@ -104,11 +108,6 @@ textarea {
   background: #E8C300;
   border-radius: 50px;
   margin-bottom: 36px;
-}
-
-.right-line {
-  border-right: 2px solid $color-grey;
-  padding-right: 10px;
 }
 
 .schedule {
@@ -133,7 +132,7 @@ textarea {
 }
 
 .text {
-  font-family:$font-bold;
+  font-family: $font-bold;
   font-size: 18px;
   line-height: 28px;
   text-align: center;

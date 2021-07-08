@@ -78,7 +78,6 @@ select {
 }
 
 textarea {
-  padding: 10px;
   border: none;
   display: inline-block;
   width: 1280px;
@@ -125,6 +124,11 @@ textarea {
   text-align: center;
   color: #FFFFFF;
   letter-spacing: 0.5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: auto;
 }
 
 .line {
@@ -134,11 +138,6 @@ textarea {
   background: #E8C300;
   border-radius: 50px;
   margin-bottom: 36px;
-}
-
-.right-line {
-  border-right: 2px solid #E5E5E5;
-  padding-right: 10px;
 }
 
 .schedule {
@@ -261,18 +260,27 @@ textarea {
 }
 
 .top-banner {
-  background-image: url("../../assets/images/banner-bg .png");
-  padding-top: 151px;
+  background-image: url("../assets/images/banner-bg .png");
+  padding: 100px 0;
   margin-top: -180px;
   z-index: -1;
 }
 
 .top-banner__wrapper {
+  position: relative;
   margin-top: 165px;
 }
 
 .top-banner__content {
   max-width: 998px;
+}
+
+.top-banner__title {
+  padding-top: 30px;
+}
+
+.top-banner__subtitle {
+  top: 0;
 }
 
 .top-banner__button {
@@ -282,7 +290,6 @@ textarea {
 
 .top-banner__angle-down {
   text-align: center;
-  margin-bottom: 92px;
 }
 
 .top-banner__angle-down-link {
@@ -292,27 +299,27 @@ textarea {
 
 .top-banner__schedule {
   position: absolute;
-  margin-top: 101px;
-  left: -81px;
-  transform: rotate(270deg);
+  top: 0;
+  left: 81px;
   color: #FFFFFF;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
 }
 
 .top-banner__socials {
   position: absolute;
-  right: 50px;
-  top: 350px;
-  transform: rotate(90deg);
+  right: 30px;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
 }
 
-.top-banner__socials img {
-  width: 60px;
-  transform: rotate(270deg);
+.top-banner__socials a {
+  display: inline-block;
 }
 
-.about__content {
-  margin-top: 217px;
-  margin-bottom: 217px;
+.about {
+  padding: 100px 0;
 }
 
 .about__desc {
@@ -325,15 +332,25 @@ textarea {
 }
 
 .about__image {
-  position: absolute;
-  right: 124px;
-  top: 100px;
+  position: relative;
+  max-width: 475px;
+  width: 100%;
 }
 
-.about__yellow-border {
+.about__image::after {
+  content: '';
   position: absolute;
-  right: 0;
-  top: 213px;
+  top: 0;
+  bottom: 0;
+  right: -70px;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border: 20px solid #E8C300;
+}
+
+.team {
+  padding: 100px 0;
 }
 
 .team__subtitle {
@@ -341,18 +358,10 @@ textarea {
 }
 
 .team__banner-bg-img {
-  background-image: url("../../assets/images/our_team-bg.png");
-}
-
-.team__subtitle {
-  position: absolute;
-  top: 50px;
-  left: 650px;
+  background-image: url("../assets/images/our_team-bg.png");
 }
 
 .team__content {
-  margin-top: 217px;
-  margin-bottom: 217px;
   line-height: 24px;
 }
 
@@ -361,43 +370,50 @@ textarea {
   font-size: 14px;
   font-style: normal;
   text-align: center;
-  padding-bottom: 100px;
 }
 
 .team__image {
-  position: absolute;
-  left: 150px;
-  top: 100px;
-  bottom: 100px;
+  position: relative;
+  max-width: 475px;
+  width: 100%;
 }
 
-.team__yellow-border {
+.team__image::after {
+  content: '';
   position: absolute;
-  left: 0;
-  top: 213px;
+  top: 0;
+  bottom: 0;
+  left: -70px;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border: 20px solid #E8C300;
 }
 
-.booking__content {
-  margin-top: 162px;
-  margin-bottom: 162px;
+.booking {
+  padding: 100px 0;
 }
 
 .booking__image {
-  position: absolute;
-  right: 124px;
-  top: 70px;
+  position: relative;
+  max-width: 475px;
+  width: 100%;
 }
 
-.booking__yellow-border {
+.booking__image::after {
+  content: '';
   position: absolute;
-  right: 0;
-  top: 150px;
+  top: 0;
+  bottom: 0;
+  right: -70px;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border: 20px solid #E8C300;
 }
 
 .booking__schedule {
-  position: absolute;
-  margin-top: 640px;
-  left: 580px;
+  margin: auto;
   color: #000000;
   opacity: 0.4;
 }
@@ -412,24 +428,16 @@ textarea {
   margin: 5px;
 }
 
+.specialties {
+  padding: 100px 0;
+}
+
 .specialties__subtitle {
   align-items: center;
 }
 
 .specialties__banner-bg-img {
-  background-image: url("../../assets/images/specialties-bg.png");
-}
-
-.specialties__subtitle {
-  position: absolute;
-  top: 50px;
-  right: 650px;
-  left: 650px;
-}
-
-.specialties__content {
-  margin-top: 217px;
-  margin-bottom: 217px;
+  background-image: url("../assets/images/specialties-bg.png");
 }
 
 .specialties__desc {
@@ -438,24 +446,28 @@ textarea {
   font-style: normal;
   line-height: 24px;
   text-align: center;
-  padding-bottom: 100px;
 }
 
 .specialties__image {
-  position: absolute;
-  left: 150px;
-  top: 100px;
-  bottom: 100px;
+  position: relative;
+  max-width: 475px;
+  width: 100%;
 }
 
-.specialties__yellow-border {
+.specialties__image::after {
+  content: '';
   position: absolute;
-  left: 0;
-  top: 213px;
+  top: 0;
+  bottom: 0;
+  left: -70px;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border: 20px solid #E8C300;
 }
 
-.menu__title {
-  margin-top: 100px;
+.menu {
+  padding: 100px 0;
 }
 
 .menu__nav {
@@ -469,105 +481,109 @@ textarea {
   margin: 50px;
 }
 
-.menu__nav-list-item {
+.menu__nav-item {
   padding: 20px 40px;
 }
 
-.menu__nav-list-item a {
+.menu__nav-item_right-line {
+  border-right: 2px solid #E5E5E5;
+}
+
+.menu__nav-item_right-line:nth-child(6n+7) {
+  border-right: none;
+}
+
+.menu__nav-item a {
   color: #000000;
 }
 
-.menu__food {
-  margin-bottom: 100px;
-}
-
-.menu__food-list-item {
+.menu__food-item {
   font-family: "Dosis Bold";
   font-size: 18px;
   line-height: 18px;
   text-align: left;
   margin-bottom: 20px;
+  min-width: 416px;
 }
 
-.events__subtitle {
-  align-items: center;
-  padding: 50px 0;
+.events {
+  padding: 100px 0;
 }
 
 .events__banner-bg-img {
-  background-image: url("../../assets/images/private_ivents-bg.png");
+  background-image: url("../assets/images/private_ivents-bg.png");
 }
 
-.events__image {
-  position: absolute;
+.events__image-left, .events__image-right {
+  position: relative;
+  max-width: 475px;
+  width: 100%;
 }
 
-.events__image-left {
-  top: 100px;
-  left: 125px;
-}
-
-.events__image-right {
-  top: 100px;
-  right: 125px;
-}
-
-.events__yellow-border-left {
-  position: absolute;
-  z-index: 1;
-  top: 170px;
-  left: 0;
-}
-
-.events__yellow-border-right {
-  position: absolute;
-  z-index: 1;
-  top: 170px;
-  right: 0;
-}
-
-.events__text {
-  position: absolute;
+.events__image-right::before {
+  content: 'CORPORATE PZRTIES';
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
   font-family: "Dosis Bold";
   font-size: 24px;
   line-height: 12px;
-  text-align: left;
+  padding: 20px 0 0 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -28px;
+  margin: auto;
+  width: 10%;
+  height: 78%;
+  background: #000000;
 }
 
-.events__text-left {
-  left: 450px;
-  top: 349px;
+.events__image-right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -70px;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border: 20px solid #E8C300;
 }
 
-.events__text-desc-left {
-  padding: 30px 20px;
-  background-color: #000000;
-  width: 479px;
-  height: 80px;
-  transform: rotate(90deg);
+.events__image-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -70px;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border: 20px solid #E8C300;
 }
 
-.events__text-right {
-  right: 450px;
-  top: 349px;
-}
-
-.events__text-desc-right {
-  padding: 30px 20px;
-  background-color: #000000;
-  width: 479px;
-  height: 80px;
-  transform: rotate(270deg);
+.events__image-left::after {
+  content: 'WEDDINGS';
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  font-family: "Dosis Bold";
+  font-size: 24px;
+  line-height: 12px;
+  padding: 20px 0 0 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -28px;
+  margin: auto;
+  width: 10%;
+  height: 78%;
+  background: #000000;
 }
 
 .events__private {
-  opacity: 0.5;
-  font-family: "Open Sans Regular";
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  margin-top: 500px;
-  padding: 50px 0;
+  margin: auto;
+  opacity: 0.4;
 }
 
 .photo-gallery__images-wrapper img {
@@ -575,20 +591,17 @@ textarea {
   height: auto;
 }
 
-.contact__title {
-  margin-top: 100px;
+.contact {
+  padding: 100px 0;
 }
 
 .contact__text {
-  margin-bottom: 51px;
-}
-
-.contact__form {
-  margin-bottom: 100px;
+  padding-bottom: 51px;
 }
 
 .contact__form-item {
   margin: 6px;
+  padding: 5px 0 0 5px;
   width: 420px;
 }
 
@@ -601,16 +614,17 @@ textarea {
   color: #E8C300;
 }
 
+.contact__form-info a {
+  color: #000000;
+}
+
 .contact__form-button {
   padding: 10px;
 }
 
 .footer {
   background-color: #000000;
-}
-
-.footer__content {
-  margin: 50px 0;
+  padding: 50px 0;
   color: #FFFFFF;
   font-family: "Open Sans Regular";
   font-size: 12px;
